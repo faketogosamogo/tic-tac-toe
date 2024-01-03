@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A6EDD261-56B8-4DBD-9BD5-BE21C6036DC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{05D7584C-5B6C-4C57-906E-E9BEB4AC77C5}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		docker-compose.yml = docker-compose.yml
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Api", "src\TicTacToe.Api\TicTacToe.Api.csproj", "{36F3C985-3606-4F15-AD99-7DE8E1D60C65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36F3C985-3606-4F15-AD99-7DE8E1D60C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F3C985-3606-4F15-AD99-7DE8E1D60C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F3C985-3606-4F15-AD99-7DE8E1D60C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F3C985-3606-4F15-AD99-7DE8E1D60C65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36F3C985-3606-4F15-AD99-7DE8E1D60C65} = {A6EDD261-56B8-4DBD-9BD5-BE21C6036DC7}
+	EndGlobalSection
+EndGlobal
