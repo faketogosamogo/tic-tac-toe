@@ -1,0 +1,24 @@
+<div class="map">
+    <div *ngFor="let row of map; let x = index" class="row">
+      <div *ngFor="let cell of row; let y = index" class="cell" (click)="makeTurn(x, y)">
+        {{ cell }}
+      </div>
+    </div>
+  </div>
+
+<div>
+    <input type="radio" name="playerSign" [(ngModel)]="playerSign" value="0" checked> Играть за X
+    <input type="radio" name="playerSign" [(ngModel)]="playerSign" value="1"> Играть за O
+</div>
+
+<div>
+    <input type="radio" name="startSign" [(ngModel)]="startSign" value="0" checked> Начинает X
+    <input type="radio" name="startSign" [(ngModel)]="startSign" value="1"> Начинает O
+</div>
+
+<button (click)="createGame()">Создать игру</button>
+
+<p>Токен игры: {{game?.token}}</p>
+
+<input type="text" [(ngModel)]="loadGameToken">
+<button (click)="loadGame()">Загрузить игру</button>
